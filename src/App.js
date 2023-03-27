@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import AllRoutes from './AllRoutes'
 import { fetchAllQuestions} from './actions/question'
 import { fetchAllUsers } from './actions/users';
+import { Chatbot } from './Components/Chatbot/Chatbot';
 
 function App() {
   const dispatch =useDispatch()
@@ -18,6 +19,7 @@ function App() {
       <Router>
           <Navbar/>
           <AllRoutes/>
+          <Chatbot/>
       </Router>
     </div>
   );
