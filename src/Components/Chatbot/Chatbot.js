@@ -1,3 +1,6 @@
+
+
+
 import React, {Component} from 'react'
 
 export class Chatbot extends Component{
@@ -12,6 +15,6 @@ export class Chatbot extends Component{
     })(document, window.kommunicate || {});
     }
     render(){
-        return <div> A</div>
+        return <div></div>
     }
 }
