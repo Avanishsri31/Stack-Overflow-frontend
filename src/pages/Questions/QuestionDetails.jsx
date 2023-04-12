@@ -16,7 +16,7 @@ import { postAnswer, deleteQuestion, voteQuestion } from '../../actions/question
 const QuestionDetails = () => {
     const { id } = useParams()
     const questionsList = useSelector(state => state.questionsReducer)
-    //console.log(questionsList)
+    console.log(questionsList)
     //console.log(questionsList)
     
     // var questionsList = [{
@@ -73,7 +73,7 @@ const QuestionDetails = () => {
     const dispatch = useDispatch()
     const User = useSelector((state) => (state.currentUserReducer))
     const location = useLocation()
-    const url = 'https://stack-overflow-avanish.netlify.app/'
+    const url = 'https://localhost:3000'
     const handlePostAns = (e, answerLength) => {
             e.preventDefault()
             if(User === null){
